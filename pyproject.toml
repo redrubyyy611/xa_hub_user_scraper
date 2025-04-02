@@ -1,5 +1,5 @@
 [project]
-name = "xa_hub_user_scrapper"
+name = "xa_hub_user_scraper"
 version = "0.1.0"
 description = "Retrieves all members from XA Hub's Roblox hacking group"
 authors = [
