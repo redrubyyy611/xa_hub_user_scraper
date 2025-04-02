@@ -16,10 +16,10 @@ This is a Python script that scrapes user data from the XA Hub Roblox group.
 
 ``` shell
 # Clone the repository
-git clone https://github.com/redrubyyy611/xa-hub-user-scraper.git
+git clone https://github.com/redrubyyy611/xa_hub_user_scraper.git
 
 # Change directory to the cloned repository
-cd xa-hub-user-scraper
+cd xa_hub_user_scraper
 
 # Install the required dependencies
 poetry env use python3
@@ -27,8 +27,8 @@ poetry env activate
 poetry install
 
 # Run the script
-poetry run python main.py --scrape # to scrape the users
-poetry run python main.py --extract # to retrieve only the ID's after scraping
+poetry run python scraper.py --scrape # to scrape the users
+poetry run python scraper.py --extract # to retrieve only the ID's after scraping
 ```
 
 The script will create a file called `xa_hub_users.txt` in the same directory as the script. This file will contain the scraped user data.
