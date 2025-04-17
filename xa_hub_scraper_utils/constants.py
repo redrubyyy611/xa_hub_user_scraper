@@ -32,6 +32,35 @@ XA_HUB_USER_IDS_JSON_FILE: str = "data/xa_hub/xa_hub_users.json"
 XA_HUB_USER_IDS_TXT_FILE: str = "data/xa_hub/xa_hub_user_ids.txt"
 """File path for the list of XA Hub user IDs text file."""
 
+# ===================
+# XPP group constants
+# ===================
+
+# IDS
+
+XPP_GROUP_ID: int = 35713343
+"""Roblox group ID for the XPP group."""
+
+XPP_MEMBER_ROLE_ID: int = 317842014
+
+"""Roblox role ID for the XPP member role."""
+
+XPP_OWNER_ROBLOX_ID: int = 8114858907
+"""Roblox ID for the XPP owner."""
+
+XPP_ADMIN_ROBLOX_IDS: list[int] = [3212616083, 5544028566, 3874719377, 4241141996]
+"""Roblox IDs for the XPP admins."""
+
+# Files
+XPP_USERS_FILE: str = "data/xpp/xpp_users.txt"
+"""File path for the list of XPP usernames/user ID pairs text file."""
+
+XPP_USER_IDS_JSON_FILE: str = "data/xpp/xpp_users.json"
+"""File path for the list of XPP users (raw Roblox group request data)."""
+
+XPP_USER_IDS_TXT_FILE: str = "data/xpp/xpp_user_ids.txt"
+"""File path for the list of XPP user IDs text file."""
+
 
 class RobloxHackingGroups(enum.Enum):
     """
@@ -40,4 +69,8 @@ class RobloxHackingGroups(enum.Enum):
     XA_HUB = {
         "name": "XA Hub",
         "aliases": ["xa", "xa_hub"],
+    }
+    XPP = {
+        "name": "XPP",
+        "aliases": ["xpp", "xpp_group"],
     }
