@@ -1,3 +1,8 @@
+ROBLOX_GROUP_BASE_SEARCH_URL: str = (
+    "https://groups.roblox.com/v1/groups/{}/roles/{}/users?limit=100&sortOrder=Desc"
+)
+"""Base URL for the Roblox group API to search for users."""
+
 # ======================
 # XA Hub group constants
 # ======================
