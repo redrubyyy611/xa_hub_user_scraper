@@ -1,3 +1,5 @@
+import enum
+
 ROBLOX_GROUP_BASE_SEARCH_URL: str = (
     "https://groups.roblox.com/v1/groups/{}/roles/{}/users?limit=100&sortOrder=Desc"
 )
@@ -30,3 +32,12 @@ XA_HUB_USER_IDS_JSON_FILE: str = "data/xa_hub/xa_hub_users.json"
 XA_HUB_USER_IDS_TXT_FILE: str = "data/xa_hub/xa_hub_user_ids.txt"
 """File path for the list of XA Hub user IDs text file."""
 
+
+class RobloxHackingGroups(enum.Enum):
+    """
+    Enum of Roblox hacking groups with their names and aliases.
+    """
+    XA_HUB = {
+        "name": "XA Hub",
+        "aliases": ["xa", "xa_hub"],
+    }
