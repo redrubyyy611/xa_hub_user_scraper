@@ -180,6 +180,14 @@ if __name__ == "__main__":
             users_txt_file = XA_HUB_USERS_FILE
             users_json_file = XA_HUB_USER_IDS_JSON_FILE
             user_ids_txt_file = XA_HUB_USER_IDS_TXT_FILE
+        elif requested_group in RobloxHackingGroups.XPP.value["aliases"]:
+            group_name = RobloxHackingGroups.XPP.value["name"]
+            base_url = ROBLOX_GROUP_BASE_SEARCH_URL.format(
+                XPP_GROUP_ID, XPP_MEMBER_ROLE_ID
+            )
+            users_txt_file = XPP_USERS_FILE
+            users_json_file = XPP_USER_IDS_JSON_FILE
+            user_ids_txt_file = XPP_USER_IDS_TXT_FILE
         else:
             warning_log(f"Ignoring invalid group specified: {bold_text(group)}")
             continue
