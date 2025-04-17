@@ -20,6 +20,15 @@ skip = '*.txt,*.json'
 
 [tool.taskipy.tasks]
 lint = "black . && isort --profile=black . && codespell ."
+scrape-xa = "python scraper.py --scrape --groups xa_hub"
+extract-xa = "python scraper.py --extract --groups xa_hub"
+scrape-extract = "python scraper.py --scrape --extract --groups xa_hub"
+scrape-xpp = "python scraper.py --scrape --groups xpp"
+extract-xpp = "python scraper.py --extract --groups xpp"
+scrape-extract-xpp = "python scraper.py --scrape --extract --groups xpp"
+scrape-all = "python scraper.py --scrape --groups xa_hub xpp"
+extract-all = "python scraper.py --extract --groups xa_hub xpp"
+scrape-extract-all = "python scraper.py --scrape --extract --groups xa_hub xpp"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
