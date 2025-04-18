@@ -1,6 +1,6 @@
 [project]
 name = "xa_hub_user_scraper"
-version = "0.1.0"
+version = "0.2.0"
 description = "Retrieves members from Roblox hacking groups"
 authors = [
     {name = "sRedRubyyy611"}
