@@ -66,6 +66,7 @@ class RobloxHackingGroups(enum.Enum):
     """
     Enum of Roblox hacking groups with their names and aliases.
     """
+
     XA_HUB = {
         "name": "XA Hub",
         "aliases": ["xa", "xa_hub"],
